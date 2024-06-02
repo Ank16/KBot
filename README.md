@@ -2,11 +2,11 @@
 ### A self hostable Discord bot to play music in server voice channels.
 
 **Requirements**
-1. Docker, can install via https://www.docker.com/products/docker-desktop/
-2. Git
+1. Docker
+    1. Install via https://www.docker.com/products/docker-desktop/
 
 **Guide:**
-1. Clone the repo with ```git clone https://github.com/Ank16/KBot.git```
+1. Clone the repo with ```git clone https://github.com/Ank16/KBot.git``` or use the ZIP download
 1. Go to https://discord.com/developers/applications and make a new application
     1. Go to the Bot tab and enable **MESSAGE CONTENT INTENT**
     1. Click **Reset Token** on the Bot tab and paste the token into the Dockerfile
