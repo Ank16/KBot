@@ -1,6 +1,10 @@
 # KBot
 ### A self hostable Discord bot to play music in server voice channels.
 
+**Requirements**
+1. Docker, can install via https://www.docker.com/products/docker-desktop/
+2. Git
+
 **Guide:**
 1. Clone the repo with ```git clone https://github.com/Ank16/KBot.git```
 1. Go to https://discord.com/developers/applications and make a new application
