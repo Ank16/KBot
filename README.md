@@ -21,3 +21,5 @@
 1. Go back to https://discord.com/developers/applications and go to the **OAuth2** tab of the application
     1. For bot permissions select *Send Messages* under **Text Permissions** as well as *Connect* and *Speak* under **Voice Permissions**
     1. Use the generated URL to add the bot to any servers you want (the bot can run on multiple servers concurrently)
+
+*Disclaimer: Use this bot at your own risk; the author is not liable for any misuse or damages*
