@@ -52,7 +52,7 @@ module.exports = {
         
         player.on(AudioPlayerStatus.Idle, async () => {
             const newSong = await queue.getNextFile(guildId);
-            if(newSong==null) {
+            if(!newSong) {
                 player.stop();
                 connection.disconnect();
                 connection.destroy();

@@ -26,7 +26,7 @@ module.exports = {
 
         const nextSong = await queue.getNextFile(guildId);
 
-        if(nextSong==null) {
+        if(!nextSong) {
             player.stop();
             connection.destroy();
             await interaction.editReply("**Finished playing**");
@@ -45,8 +45,8 @@ module.exports = {
         });
         
         player.on(AudioPlayerStatus.Idle, async () => {
-            const newSong = queue.getNextFile(guildId);
-            if(newSong==null) {
+            const newSong = await queue.getNextFile(guildId);
+            if(!newSong) {
                 player.stop();
                 connection.disconnect();
                 connection.destroy();
